@@ -338,7 +338,7 @@
     "bucketfill": "Bucket fill",
     "hand": "Hand (panning tool)",
     "extraTools": "More tools",
-    "mermaidToExcalidraw": "Mermaid to Excalidraw",
+    "mermaidToExcalidraw": "Mermaid to Colearn",
     "convertElementType": "Toggle shape type"
   },
   "bucketfill": {
@@ -539,8 +539,8 @@
     }
   },
   "encrypted": {
-    "tooltip": "Your drawings are end-to-end encrypted so Excalidraw's servers will never see them.",
-    "link": "Blog post on end-to-end encryption in Excalidraw"
+    "tooltip": "Your drawings are end-to-end encrypted so Colearn's servers will never see them.",
+    "link": "#"
   },
   "stats": {
     "angle": "Angle",
@@ -650,7 +650,7 @@
     }
   },
   "mermaid": {
-    "title": "Mermaid to Excalidraw",
+    "title": "Mermaid to Colearn",
     "button": "Insert",
     "description": "Currently only <flowchartLink>Flowchart</flowchartLink>, <sequenceLink>Sequence</sequenceLink>, <classLink>Class</classLink>, and <erdLink>Entity Relationship</erdLink> Diagrams are supported. The other types will be rendered as image in Excalidraw.",
     "syntax": "Mermaid Syntax",
