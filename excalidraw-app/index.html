@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Excalidraw Whiteboard</title>
+    <title>Colearn Whiteboard</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no"
@@ -12,49 +12,38 @@
     <meta name="theme-color" content="#121212" />
 
     <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="Free, collaborative whiteboard • Hand-drawn look & feel | Excalidraw"
-    />
+    <meta name="title" content="Colearn — Collaborative Learning Whiteboard" />
     <meta
       name="description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Colearn is a collaborative learning whiteboard for creating diagrams, visual notes, and ideas."
     />
-    <meta name="image" content="https://excalidraw.com/og-image-3.png" />
+    <meta name="image" content="/og-image-3.png" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:site_name" content="Excalidraw" />
+    <meta property="og:site_name" content="Colearn" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://excalidraw.com" />
     <meta
       property="og:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Colearn — Collaborative Learning Whiteboard"
     />
-    <meta property="og:image:alt" content="Excalidraw logo" />
+    <meta property="og:image:alt" content="Colearn whiteboard" />
     <meta
       property="og:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Colearn is a collaborative learning whiteboard for creating diagrams, visual notes, and ideas."
     />
-    <meta property="og:image" content="https://excalidraw.com/og-image-3.png" />
+    <meta property="og:image" content="/og-image-3.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@excalidraw" />
-    <meta property="twitter:url" content="https://excalidraw.com" />
     <meta
       property="twitter:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Colearn — Collaborative Learning Whiteboard"
     />
     <meta
       property="twitter:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Colearn is a collaborative learning whiteboard for creating diagrams, visual notes, and ideas."
     />
-    <meta
-      property="twitter:image"
-      content="https://excalidraw.com/og-image-3.png"
-    />
-
-    <link rel="canonical" href="https://excalidraw.com" />
+    <meta property="twitter:image" content="/og-image-3.png" />
 
     <!------------------------------------------------------------------------->
     <!--   to minimize white flash on load when user has dark mode enabled   -->
@@ -99,18 +88,10 @@
     <!------------------------------------------------------------------------->
     <% if (typeof PROD != 'undefined' && PROD == true) { %>
     <script>
-      // Redirect Excalidraw+ users which have auto-redirect enabled.
-      //
-      // Redirect only the bare root path, so link/room/library urls are not
-      // redirected.
-      //
-      // Putting into index.html for best performance (can't redirect on server
-      // due to location.hash checks).
       if (
         window.location.pathname === "/" &&
         !window.location.hash &&
         !window.location.search &&
-        // if its present redirect
         document.cookie.includes("excplus-autoredirect=true")
       ) {
         window.location.href = "https://app.excalidraw.com";
@@ -137,7 +118,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-    <!-- Excalidraw version -->
+    <!-- Colearn version -->
     <meta name="version" content="{version}" />
 
     <% if (typeof VITE_APP_DEV_DISABLE_LIVE_RELOAD != 'undefined' &&
@@ -158,7 +139,6 @@
     </script>
     <% } %>
     <script>
-      // setting this so that libraries installation reuses this window tab.
       window.name = "_excalidraw";
     </script>
 
@@ -208,16 +188,15 @@
   </head>
 
   <body>
-    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <header>
-      <h1 class="visually-hidden">Excalidraw</h1>
+      <h1 class="visually-hidden">Colearn</h1>
     </header>
     <div id="root"></div>
     <script type="module" src="index.tsx"></script>
     <% if (typeof PROD != 'undefined' && PROD == true) { %>
     <!-- 100% privacy friendly analytics -->
     <script>
-      // need to load this script dynamically bcs. of iframe embed tracking
       var scriptEle = document.createElement("script");
       scriptEle.setAttribute(
         "src",
@@ -226,14 +205,12 @@
       scriptEle.setAttribute("type", "text/javascript");
       scriptEle.setAttribute("defer", true);
       scriptEle.setAttribute("async", true);
-      // if iframe
       if (window.self !== window.top) {
         scriptEle.setAttribute("data-auto-collect", true);
       }
 
       document.body.appendChild(scriptEle);
 
-      // if iframe
       if (window.self !== window.top) {
         scriptEle.addEventListener("load", () => {
           if (window.sa_pageview) {
@@ -246,7 +223,6 @@
         });
       }
     </script>
-    <!-- end LEGACY GOOGLE ANALYTICS -->
     <% } %>
   </body>
 </html>

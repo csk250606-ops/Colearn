@@ -593,16 +593,16 @@
   },
   "welcomeScreen": {
     "app": {
-      "center_heading": "Your drawings are saved in your browser's storage.",
-      "center_heading_line2": "Browser storage can be cleared unexpectedly.",
-      "center_heading_line3": "Save your work to a file regularly to avoid losing it.",
-      "center_heading_plus": "Did you want to go to the Excalidraw+ instead?",
+      "center_heading": "Welcome to Colearn.",
+      "center_heading_line2": "Your collaborative learning whiteboard.",
+      "center_heading_line3": "Create, organize, and save your ideas regularly.",
+      "center_heading_plus": "",
       "menuHint": "Export, preferences, languages, ..."
     },
     "defaults": {
       "menuHint": "Export, preferences, and more...",
-      "center_heading": "Diagrams. Made. Simple.",
-      "toolbarHint": "Pick a tool & Start drawing!",
+      "center_heading": "Learn. Create. Collaborate.",
+      "toolbarHint": "Pick a tool & start creating!",
       "helpHint": "Shortcuts & help"
     }
   },

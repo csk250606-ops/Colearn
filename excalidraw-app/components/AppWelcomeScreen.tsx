@@ -1,4 +1,3 @@
-import { loginIcon } from "@excalidraw/excalidraw/components/icons";
 import { POINTER_EVENTS } from "@excalidraw/common";
 import { useI18n } from "@excalidraw/excalidraw/i18n";
 import { WelcomeScreen } from "@excalidraw/excalidraw/index";
@@ -52,7 +51,19 @@ export const AppWelcomeScreen: React.FC<{
       <WelcomeScreen.Hints.ToolbarHint />
       <WelcomeScreen.Hints.HelpHint />
       <WelcomeScreen.Center>
-        <WelcomeScreen.Center.Logo />
+        <WelcomeScreen.Center.Logo>
+          <div
+            style={{
+              color: "#5c5ce2",
+              fontFamily: "Assistant, sans-serif",
+              fontSize: "42px",
+              fontWeight: 700,
+              letterSpacing: "-1px",
+            }}
+          >
+            COLEARN
+          </div>
+        </WelcomeScreen.Center.Logo>
         <WelcomeScreen.Center.Heading>
           {headingContent}
         </WelcomeScreen.Center.Heading>
@@ -63,17 +74,6 @@ export const AppWelcomeScreen: React.FC<{
             <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
               onSelect={() => props.onCollabDialogOpen()}
             />
-          )}
-          {!isExcalidrawPlusSignedUser && (
-            <WelcomeScreen.Center.MenuItemLink
-              href={`${
-                import.meta.env.VITE_APP_PLUS_LP
-              }/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest`}
-              shortcut={null}
-              icon={loginIcon}
-            >
-              {t("labels.signUp")}
-            </WelcomeScreen.Center.MenuItemLink>
           )}
         </WelcomeScreen.Center.Menu>
       </WelcomeScreen.Center>
